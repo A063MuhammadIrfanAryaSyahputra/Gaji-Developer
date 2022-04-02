@@ -113,3 +113,132 @@ void gaji::output() {
     cout << "||============================================ \n";
 
 }
+
+int main() {
+    int pilih, bdg;
+    cout << "||============================================||\n";
+    cout << "||Developer yang dibutuhkan :                 ||" << endl;
+    cout << "||1. Express JS : 15 juta / perbulan          ||" << endl;
+    cout << "||2. Django Python : 13 juta / perbulan       ||" << endl;
+    cout << "||3. Rails Ruby : 8 juta / perbulan           ||" << endl;
+    cout << "||4. Laravel PHP : 18 juta / perbulan         ||" << endl;
+    cout << "||5. Spring Java : 8 juta / perbulan          ||"  << endl;
+    cout << "||6. Angular JS : 15 juta / perbulan          ||" << endl;
+    cout << "||============================================||\n";
+    cout << "||berapa bidang yg ingin anda ambil?"<<endl;
+    cout<<"||";
+    cin >> pilih;
+
+    if (pilih == 1) {
+        cout << "||Masukkan bidang anda : "<<endl;
+        cout<<"||";
+        cin >> bdg;
+        switch (bdg) {
+        case 1: 
+            gji.input1(15);
+            break;
+        case 2:
+            gji.input1(13);
+            break;
+        case 3:
+            gji.input1(8);
+            break;
+        case 4:
+            gji.input1(18);
+            break;
+        case 5:
+            gji.input1(8);
+            break;
+        case 6:
+            gji.input1(15);
+            break;
+
+        }
+
+    }
+    else if (pilih == 2){
+    	float bdg,bdg2;
+    	cout << "||Masukkan bidang pertama anda : "<<endl;
+    	cout<<"||";
+        cin >> bdg;
+        cout<<"||Masukan bidang kedua anda : "<<endl;
+        cout<<"||";
+        cin>>bdg2;
+        
+        //gaji 1
+        if(bdg==1 && bdg2==2)
+        	gji.input2(15,13);
+        	
+        else if(bdg==1 && bdg2==2)
+        	gji.input2(15,13);
+        	
+        else if(bdg==1 && bdg2==3)
+        	gji.input2(15,8);
+        	
+        else if(bdg==1 && bdg2==4)
+        	gji.input2(15,18);
+        	
+        else if(bdg==1 && bdg2==5)
+        	gji.input2(15,8);
+        	
+        else if(bdg==1 && bdg2==6)
+        	gji.input2(15,15);
+        
+        	
+        	
+        //gaji 2
+        else if(bdg==2 && bdg2==1)
+        	gji.input2(13,15);
+        else if(bdg==2 && bdg2==3)
+        	gji.input2(13,8);
+        	
+        else if(bdg==2 && bdg2==4)
+        	gji.input2(15,18);
+        
+        else if(bdg==2 && bdg2==5)
+        	gji.input2(15,8);
+        
+        else if(bdg==2 && bdg2==6)
+        	gji.input2(15,15);
+        	
+        	
+        //gaji 3
+        else if(bdg==3 && bdg2==1)
+        	gji.input2(8,15);
+        	else if(bdg==3 && bdg2==2)
+        	gji.input2(8,13);
+        else if(bdg==3 && bdg2==4)
+        	gji.input2(8,18);
+        	
+        else if(bdg==3 && bdg2==5)
+        	gji.input2(8,8);
+        else if(bdg==3 && bdg2==6)
+        	gji.input2(8,15);
+        //gaji 4
+        else if(bdg==4 && bdg2==1)
+        	gji.input2(18,15);
+        else if(bdg==4 && bdg2==2)
+        	gji.input2(18,13);
+        else if(bdg==4 && bdg2==3)
+        	gji.input2(18,8);
+        else if(bdg==4 && bdg2==5)
+        	gji.input2(18,8);
+        else if(bdg==4 && bdg2==6)
+        	gji.input2(18,15);
+        //gaji 5
+        else if(bdg==5 && bdg2==1)
+        	gji.input2(8,15);
+      	else if(bdg==5 && bdg2==2)
+        	gji.input2(8,13);
+        else if(bdg==5 && bdg2==3)
+        	gji.input2(8,8);
+        else if(bdg==5 && bdg2==4)
+        	gji.input2(8,18);
+        else if(bdg==5 && bdg2==6)
+        	gji.input2(8,15);
+			}
+        
+    		gji.output();
+		}
+	   //	gji.output();
+	   	
