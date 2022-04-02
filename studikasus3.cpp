@@ -64,5 +64,3 @@ void gaji::input1(float a) {
     
     system("cls");
 }
-
-v
