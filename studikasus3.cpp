@@ -64,3 +64,52 @@ void gaji::input1(float a) {
     
     system("cls");
 }
+
+void gaji::input2(float a, float b) {
+	cout << "||Berapa tahun pengalaman anda dalam kedua bidang tersebut ? ";
+    cin >> gji.lama;
+    if (gji.lama<2.5){
+    	cout<<"Anda tidak bisa mengikuti bidang ini! ";
+    }
+    else if (gji.lama>2.5){
+		cout << "||Apakah anda pernah menjadi leader sebelumnya ?(y/t)";
+        cin >> gji.leader;
+        switch (gji.leader){
+        case 'y':  
+        	gji.awal2 = b-(b*0.09);
+        	gji.gaji2 = a-(a*0.09);
+            gji.awal = gji.awal2+gji.gaji2;
+            gji.bonusleader = a * 0.06;
+            gji.total = gji.awal2+gji.gaji2+gji.bonusleader;
+            break;
+        
+        case 't':
+            gji.gaji2 = a-(a*0.09);
+            gji.awal2 = b-(b*0.09);
+            gji.awal = a+b;
+            gji.bonusleader = 0;
+            gji.total = gji.gaji2+gji.awal2;
+            
+        }
+    }
+		
+		
+		system("cls");
+		
+}
+	
+		
+	
+
+
+
+
+void gaji::output() {
+    cout << "||============================================ \n";
+    cout << "||Gaji Bidang Anda        : " << gji.awal << " Juta Perbulan\n";
+    cout << "||Bonus Pengalaman        : " << gji.bonuslama << " Juta Perbulan    \n";
+    cout << "||Bonus Pengalaman Leader : " << gji.bonusleader << " Juta Perbulan  \n";
+    cout << "||Total Gaji Anda         : " << gji.total << " Juta Rupiah  \n";
+    cout << "||============================================ \n";
+
+}
